@@ -1,9 +1,10 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 import { Navbar } from "./navbar";
 import { buttonVariants } from "@/components/ui/button";
-import React from "react";
 
 export function HeroSection() {
 	return (
@@ -35,13 +36,18 @@ export function HeroSection() {
 
 const HeroContainer = ({ children }: { children?: React.ReactNode }) => (
 	<div className="relative max-w-full overflow-hidden">
-		<GradientBackground />
+		<GradientBackground className="ring-1 ring-black/5 ring-inset" />
 		<div className="relative px-6 lg:px-8">
 			<div className="mx-auto max-w-2xl lg:max-w-7xl">{children}</div>
 		</div>
 	</div>
 );
 
-const GradientBackground = () => (
-	<div className="absolute inset-2 bottom-0 rounded-4xl bg-linear-115 from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] ring-1 ring-black/5 ring-inset sm:bg-linear-145" />
+export const GradientBackground = ({ className }: { className?: string }) => (
+	<div
+		className={cn(
+			"absolute inset-2 bottom-0 rounded-4xl bg-linear-115 from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] sm:bg-linear-145",
+			className,
+		)}
+	/>
 );
