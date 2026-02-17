@@ -1,12 +1,9 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import { Logo } from "./logo";
-import { cn } from "@/lib/utils";
 import { GridCell, GridRow } from "./grid";
 import { GradientBackground } from "./hero-section";
-import { buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { FacebookIcon, LinkedinIcon, XIcon } from "@/components/ui/icons";
 
 const footerLinks = [
@@ -78,9 +75,9 @@ export function Footer() {
 					Get the cheat codes for selling and unlock your team's revenue
 					potential.
 				</p>
-				<Link className={cn(buttonVariants(), "mt-6")} href="#">
-					Get started
-				</Link>
+				<Button className="mt-6" asChild>
+					<Link href="#">Get started</Link>
+				</Button>
 			</div>
 			<div className="pb-16">
 				<GridRow>

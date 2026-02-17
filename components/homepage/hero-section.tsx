@@ -1,10 +1,8 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Navbar } from "./navbar";
-import { buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
 	return (
@@ -19,15 +17,12 @@ export function HeroSection() {
 					your customers.
 				</p>
 				<div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-					<Link className={buttonVariants()} href="#">
-						Get started
-					</Link>
-					<Link
-						className={buttonVariants({ variant: "secondary" })}
-						href="/pricing"
-					>
-						See pricing
-					</Link>
+					<Button asChild>
+						<Link href="#">Get started</Link>
+					</Button>
+					<Button variant="secondary" asChild>
+						<Link href="#">See pricing</Link>
+					</Button>
 				</div>
 			</div>
 		</HeroContainer>
