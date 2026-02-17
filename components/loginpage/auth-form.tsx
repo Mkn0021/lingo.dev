@@ -14,9 +14,9 @@ import {
 	LoginForm,
 } from "@/app/(auth)/schema";
 
-import { Icons } from "@/components/ui/icons";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { GoogleIcon } from "@/components/ui/icons";
 import { PasswordInput } from "@/components/ui/password-input";
 import { Field, FieldError, FieldLabel } from "@/components/ui/field";
 
@@ -223,7 +223,7 @@ const AuthForm: React.FC = () => {
 					className="flex w-full items-center justify-center gap-2"
 					onClick={handleGoogleLogin}
 				>
-					<Icons.google />
+					<GoogleIcon />
 					Continue with Google
 				</Button>
 			</form>
