@@ -104,7 +104,7 @@ export function Footer() {
 }
 
 const FooterContainer = ({ children }: { children: React.ReactNode }) => (
-	<footer className="relative">
+	<footer className="relative mt-24">
 		<GradientBackground className="inset-0 rounded-none" />
 		<div className="absolute inset-2 rounded-4xl bg-white/80" />
 		<div className="px-6 lg:px-8">
