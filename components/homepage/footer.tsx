@@ -76,7 +76,7 @@ export function Footer() {
 					potential.
 				</p>
 				<Button className="mt-6" asChild>
-					<Link href="#">Get started</Link>
+					<Link href="/login?tab=sign-up">Get started</Link>
 				</Button>
 			</div>
 			<div className="pb-16">

@@ -7,7 +7,7 @@ const navList = [
 	{ title: "Home", link: "/" },
 	{ title: "About", link: "/about" },
 	{ title: "Services", link: "/services" },
-	{ title: "Contact", link: "/contact" },
+	{ title: "Login", link: "/login" },
 ];
 
 export function Navbar() {

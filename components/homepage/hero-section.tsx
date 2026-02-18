@@ -18,7 +18,7 @@ export function HeroSection() {
 				</p>
 				<div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
 					<Button asChild>
-						<Link href="#">Get started</Link>
+						<Link href="/login?tab=sign-up">Get started</Link>
 					</Button>
 					<Button variant="secondary" asChild>
 						<Link href="#">See pricing</Link>
