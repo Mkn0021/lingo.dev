@@ -4,40 +4,43 @@ import { cn } from "@/lib/utils";
 
 const features = [
 	{
-		pinLabel: "Analytics",
-		title: "Unlock actionable insights",
+		pinLabel: "Upload",
+		title: "Drop any document.",
+		description:
+			"Upload PDFs in Spanish, French, or Japanese. LinguaBot automatically extracts and prepares the text.",
 		className: "max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl",
-		description:
-			"Gain deep understanding of your customer behavior with real-time analytics.",
 		children: <div className="h-full" />,
 	},
 	{
-		pinLabel: "Automation",
-		title: "Automate your workflow",
+		pinLabel: "Ask",
+		title: "Type your question.",
+		description:
+			"Ask naturally in English. LinguaBot translates your query behind the scenes before searching.",
 		className: "lg:col-span-3 lg:rounded-tr-4xl",
-		description: "Streamline repetitive tasks and focus on what matters most.",
 		children: <div className="h-full" />,
 	},
 	{
-		pinLabel: "Integration",
-		title: "Connect your tools",
-		className: "lg:col-span-2 lg:rounded-bl-4xl",
-		description: "Seamlessly integrate with your favorite apps and services.",
-		children: <div className="h-full" />,
-	},
-	{
-		pinLabel: "Security",
-		title: "Protect your data",
-		className: "lg:col-span-2",
+		pinLabel: "Search",
+		title: "Find the answer.",
 		description:
-			"Enterprise-grade security ensures your information stays safe.",
+			"Semantic search finds relevant chunks across all your documents, regardless of their original language.",
+		className: "lg:col-span-2 lg:rounded-bl-4xl",
 		children: <div className="h-full" />,
 	},
 	{
-		pinLabel: "Support",
-		title: "24/7 Customer Support",
+		pinLabel: "Translate",
+		title: "Get it back.",
+		description:
+			"Results are translated instantly to your preferred language, even when the source was Spanish, French, or Japanese.",
+		className: "lg:col-span-2",
+		children: <div className="h-full" />,
+	},
+	{
+		pinLabel: "Scale",
+		title: "Connect databases.",
+		description:
+			"Query multilingual SQL tables directly. Ask in English, search across translated database columns. (coming soon)",
 		className: "lg:col-span-2 lg:rounded-br-4xl",
-		description: "Our team is always here to help you succeed.",
 		children: <div className="h-full" />,
 	},
 ];
@@ -53,8 +56,14 @@ interface FeatureSkeletonProps {
 export function FeatureSection() {
 	return (
 		<Section
-			pinLabel="Sales"
-			title="Know more about your customers than they do."
+			pinLabel="Features"
+			title={
+				<>
+					Language should never
+					<br />
+					block information.
+				</>
+			}
 		>
 			<div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
 				{features.map((feature) => (

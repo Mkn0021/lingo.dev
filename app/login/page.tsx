@@ -1,5 +1,12 @@
 import React from "react";
 import AuthForm from "@/components/loginpage/auth-form";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "LinguaBot - Login",
+	description:
+		"Sign in to access LinguaBot's cross-lingual document intelligence platform.",
+};
 
 export default function LoginPage() {
 	return (

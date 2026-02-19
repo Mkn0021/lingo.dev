@@ -9,19 +9,20 @@ export function HeroSection() {
 		<HeroContainer>
 			<Navbar />
 			<div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-				<h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-					Close every deal.
+				<h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-7xl/[0.8] md:text-8xl/[0.8]">
+					Don't translate, Just ask.
 				</h1>
 				<p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-					Radiant helps you sell more by revealing sensitive information about
-					your customers.
+					Upload any document. Ask in your language. Get answers instantly.
 				</p>
 				<div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
 					<Button asChild>
 						<Link href="/login?tab=sign-up">Get started</Link>
 					</Button>
 					<Button variant="secondary" asChild>
-						<Link href="#">See pricing</Link>
+						<Link target="_blank" href="https://github.com/Mkn0021/lingo.dev">
+							View on GitHub
+						</Link>
 					</Button>
 				</div>
 			</div>

@@ -68,12 +68,12 @@ export function Footer() {
 					<p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
 						Ready to dive in?
 						<br />
-						Start your free trial today.
+						Upload a document and ask.
 					</p>
 				</hgroup>
 				<p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-					Get the cheat codes for selling and unlock your team's revenue
-					potential.
+					No translation needed. Just upload in any language and ask questions
+					in yours.
 				</p>
 				<Button className="mt-6" asChild>
 					<Link href="/login?tab=sign-up">Get started</Link>
@@ -92,7 +92,7 @@ export function Footer() {
 				</GridRow>
 				<GridRow className="flex items-center justify-between">
 					<GridCell className="py-2 text-sm/6 text-gray-950">
-						© 2026 Radiant Inc.
+						© 2026 LinguaBot Inc.
 					</GridCell>
 					<GridCell className="gap-8 py-3">
 						<SocialLinks />

@@ -5,8 +5,8 @@ import { ArrowRight, MenuIcon } from "@/components/ui/icons";
 
 const navList = [
 	{ title: "Home", link: "/" },
-	{ title: "About", link: "/about" },
-	{ title: "Services", link: "/services" },
+	{ title: "About", link: "#" },
+	{ title: "Services", link: "#" },
 	{ title: "Login", link: "/login" },
 ];
 
@@ -18,7 +18,10 @@ export function Navbar() {
 					<GridCell className="py-3">
 						<Logo />
 					</GridCell>
-					<Banner message="Radiant raises $100M Series A from Tailwind Ventures" />
+					<Banner
+						message="LinguaBot launches at Multilingual Hackathon 2026"
+						href="https://luma.com/wv9mbyal"
+					/>
 				</div>
 				<DesktopNavbar />
 				<HamburgerMenu />
@@ -42,11 +45,12 @@ const DesktopNavbar = () => (
 	</nav>
 );
 
-const Banner = ({ message }: { message: string }) => (
+const Banner = ({ message, href }: { message: string; href: string }) => (
 	<div className="relative hidden items-center py-3 lg:flex">
 		<Link
 			className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white hover:bg-fuchsia-950/30"
-			href="#"
+			target="_blank"
+			href={href}
 		>
 			{message}
 			<ArrowRight />

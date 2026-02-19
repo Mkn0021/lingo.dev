@@ -5,7 +5,7 @@ interface SectionProps {
 	children: React.ReactNode;
 	className?: string;
 	pinLabel?: string;
-	title: string;
+	title: React.ReactNode;
 }
 
 export function Section({
